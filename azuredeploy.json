@@ -44,6 +44,21 @@
       "minLength": 1,
       "defaultValue": "myMasterKey"
     },
+    "storageAccountName": {
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "myStorageAccountName"
+    },
+    "storageContainer": {
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "myStorageContainer"
+    },
+    "storageAccessKey": {
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "myStorageAccessKey"
+    },
     "repoURL": {
       "type": "string",
       "defaultValue": "https://github.com/parseplatform/parse-server-example.git",
@@ -101,18 +116,30 @@
                 "name": "DATABASE_URI",
                 "value": "[parameters('mongoConnectionString')]"
               },
-            {
-            "name": "APP_ID",
-            "value": "[parameters('parseAppId')]"
-            },
-            {
-            "name": "MASTER_KEY",
-            "value": "[parameters('parseMasterKey')]"
-            },
-            {
+              {
+                "name": "APP_ID",
+                "value": "[parameters('parseAppId')]"
+              },
+              {
+                "name": "MASTER_KEY",
+                "value": "[parameters('parseMasterKey')]"
+              },
+              {
+                "name": "STORAGE_ACCOUNT_NAME",
+                "value": "[parameters('storageAccountName')]"
+              },
+              {
+                "name": "STORAGE_CONTAINER",
+                "value": "[parameters('storageContainer')]"
+              },
+              {
+                "name": "STORAGE_ACCESS_KEY",
+                "value": "[parameters('storageAccessKey')]"
+              },
+              {
                 "name": "WEBSITE_NODE_DEFAULT_VERSION",
                 "value": "4.2.3"
-            }
+              }
             ]
           }
         },
