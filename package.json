@@ -10,16 +10,24 @@
   "license": "MIT",
   "dependencies": {
     "buffer-shims": "^1.0.0",
+    "docx-to-pdf": "^1.1.0",
+    "docxtemplater": "^3.1.12",
+    "dotenv": "^4.0.0",
     "express": "^4.13.4",
+    "fs": "0.0.1-security",
+    "jszip": "^2.6.1",
+    "lodash": "^4.17.4",
+    "parse-dashboard": "1.1.0",
     "parse-server": "2.3.x",
-    "parse-dashboard": "^1.0.11",
-    "parse-server-azure-config": "^1.0.0"
+    "parse-server-azure-config": "^1.0.0",
+    "parse-server-azure-storage": "^1.1.0",
+    "sendgrid": "^5.2.3"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node --inspect index.js",
     "postinstall": "git update-index --skip-worktree local.js & exit 0"
   },
   "engines": {
-    "node": "6.9.4"
+    "node": "8.9.0"
   }
 }
